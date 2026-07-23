@@ -1,50 +1,72 @@
 # Learning System
 
 > Status: Active
-> Version: 1.0
+> Version: 2.0
 > Last Updated:
 
 ---
 
 # Purpose
 
-This document defines the standard learning methodology for every topic throughout this career journey.
+This document defines the standard learning methodology for every topic throughout the career system.
 
-Every skill, regardless of difficulty or domain, follows the same structured process.
+The objective is not simply to acquire knowledge.
 
-The objective is not merely to consume information but to transform knowledge into demonstrable engineering capability.
+The objective is to become capable of making sound engineering decisions, building secure systems, defending those decisions, and communicating them professionally.
+
+Learning is complete only when knowledge becomes demonstrable engineering capability.
 
 ---
 
 # Learning Philosophy
 
-Learning is complete only when knowledge can be:
+Learning should answer five questions.
 
-- Understood
-- Applied
-- Explained
-- Defended
-- Demonstrated
+1. What problem exists?
 
-Reading alone is never considered completion.
+2. Why does this technology exist?
 
-Watching videos alone is never considered completion.
+3. How does it work?
 
-Completing courses alone is never considered completion.
+4. Why choose this solution over others?
 
-Implementation is mandatory.
+5. Can I build, defend, and explain it?
+
+Knowing syntax alone is not learning.
+
+Watching videos alone is not learning.
+
+Reading documentation alone is not learning.
+
+Implementation without understanding is incomplete.
+
+Understanding without implementation is incomplete.
+
+Engineering requires both.
 
 ---
 
 # Learning Pipeline
 
-Every skill follows this pipeline.
+Every skill follows the same pipeline.
 
 Need
 
 ↓
 
-Objective
+Big Picture
+
+↓
+
+Problem Statement
+
+↓
+
+Technology Landscape
+
+↓
+
+Objectives
 
 ↓
 
@@ -56,15 +78,31 @@ Visualization
 
 ↓
 
+Internal Working
+
+↓
+
+Security Perspective
+
+↓
+
+Industry Usage
+
+↓
+
+Engineering Alternatives
+
+↓
+
+Engineering Decision
+
+↓
+
 Hands-on Practice
 
 ↓
 
-Cyber Act
-
-↓
-
-HTB / Labs
+Cyber Act Module
 
 ↓
 
@@ -90,11 +128,189 @@ Portfolio Evidence
 
 Revision
 
-A skill is never skipped directly to implementation without understanding.
-
-Likewise, theory without implementation is considered incomplete.
+---
 
 ---
+
+# Knowledge Pull
+
+## Purpose
+
+Knowledge gaps naturally appear throughout the learning process.
+
+Rather than interrupting the current module to study an entire dependency, pull only the minimum knowledge required to answer the current engineering question.
+
+Once the question has been answered, immediately return to the original module.
+
+The objective is to preserve learning momentum while preventing unnecessary rabbit holes.
+
+---
+
+## Workflow
+
+Current Module
+
+↓
+
+Knowledge Gap Appears
+
+↓
+
+Define One Specific Question
+
+↓
+
+Identify Required Knowledge
+
+↓
+
+Pull Only Required Knowledge
+
+↓
+
+Answer Current Question
+
+↓
+
+Return Immediately
+
+↓
+
+Continue Original Module
+
+---
+
+## Rules
+
+### Rule 1 — Pull by Necessity
+
+Only pull knowledge when the current engineering question cannot be answered.
+
+Do not study a dependency simply because it may be useful later.
+
+---
+
+### Rule 2 — Minimize Scope
+
+Study only the concepts required to answer the current question.
+
+Avoid exploring unrelated areas of the dependency.
+
+Example
+
+Authentication
+
+↓
+
+Question
+
+How are credentials sent?
+
+↓
+
+Pull
+
+- HTTP Request
+- POST Method
+- Request Body
+
+↓
+
+Return
+
+Do not continue learning HTTP caching, HTTP/2, HTTP/3, or unrelated topics.
+
+---
+
+### Rule 3 — Immediate Return
+
+Once the question has been answered, immediately return to the original module.
+
+Do not continue exploring the dependency.
+
+---
+
+### Rule 4 — Preserve Context
+
+The original engineering problem always remains the primary focus.
+
+Dependencies exist only to support understanding.
+
+---
+
+### Rule 5 — Follow the Branch Rule
+
+Every knowledge pull follows the Branch Rule.
+
+Knowledge Pull
+
+↓
+
+Answer Question
+
+↓
+
+Return
+
+Avoid creating additional branches unless absolutely necessary.
+
+---
+
+## Success Criteria
+
+A successful Knowledge Pull should:
+
+- Answer the current engineering question.
+- Minimize unnecessary learning.
+- Preserve learning momentum.
+- Prevent rabbit holes.
+- Return immediately to the original module.
+
+---
+
+## Final Principle
+
+Knowledge should be pulled by necessity, not curiosity.
+
+The original module always remains the primary objective.
+
+
+
+## Foundation Terminology
+
+Before every major module, identify and learn all prerequisite terminology required to understand the topic.
+
+For every term, answer the following:
+
+1. What is it?
+   - What is it physically? (function, class, object, process, protocol, program, library, framework, database, etc.)
+
+2. Why does it exist?
+
+3. Where does it live?
+   - Browser
+   - Python Process
+   - Operating System
+   - Network
+   - Database Process
+   - Cloud
+   - etc.
+
+4. Who creates it?
+
+5. Who uses it?
+
+6. What does it receive?
+
+7. What does it produce / return?
+
+8. How does it work internally? (only to the required depth)
+
+9. HC Example
+
+The objective is to build a concrete mental model before learning the module itself.
+
+
 
 # Stage 1 — Need Identification
 
@@ -103,106 +319,288 @@ Every learning session begins by answering:
 - Why am I learning this?
 - Which target role requires it?
 - Which project will use it?
-- What problem does it solve?
+- Which engineering problem does it solve?
+- Which security problem does it solve?
 
-Learning without purpose is discouraged.
-
----
-
-# Stage 2 — Objective
-
-Define clear outcomes.
-
-Examples:
-
-- Understand OAuth2 Authorization Code Flow.
-- Implement RBAC.
-- Build a Sigma rule.
-- Parse Windows Event Logs.
-
-Objectives should be measurable.
+Learning without purpose should be avoided.
 
 ---
 
-# Stage 3 — Theory
+# Stage 2 — Big Picture
 
-Understand:
+Understand where this topic belongs.
 
-- Core concepts
+Example
+
+Authentication
+
+↓
+
+Authorization
+
+↓
+
+Sessions
+
+↓
+
+Secure APIs
+
+↓
+
+Logging
+
+↓
+
+Detection
+
+Do not study details yet.
+
+Build a mental map first.
+
+---
+
+# Stage 3 — Problem Statement
+
+Identify the original engineering problem.
+
+Examples
+
+HTTP is stateless.
+
+↓
+
+Sessions
+
+Passwords are weak.
+
+↓
+
+MFA
+
+Multiple applications require shared identity.
+
+↓
+
+OAuth2
+
+Understanding the problem makes the solution easier to understand.
+
+---
+
+# Stage 4 — Technology Landscape
+
+Before learning one technology, understand the ecosystem.
+
+Example
+
+Authentication
+
+- Sessions
+- JWT
+- OAuth2
+- OpenID Connect
+- SAML
+- API Keys
+- Passkeys
+- Mutual TLS
+
+For each answer only:
+
+- What is it?
+- Why does it exist?
+- When is it used?
+
+Do not learn every alternative in depth.
+
+Build awareness.
+
+---
+
+# Stage 5 — Objectives
+
+Define measurable outcomes.
+
+Examples
+
+- Explain session management.
+- Build secure authentication.
+- Compare Sessions and JWT.
+- Justify the chosen design.
+
+Objectives should focus on capability.
+
+---
+
+# Stage 6 — Theory
+
+Study:
+
+- Concepts
 - Terminology
+- Architecture
 - Internal mechanisms
-- Design decisions
-- Security implications
-- Limitations
+- Design principles
 
-Avoid memorization without understanding.
+Understand why the technology exists.
 
 ---
 
-# Stage 4 — Visualization
+# Stage 7 — Visualization
 
 Build mental models.
 
-Preferred methods:
+Preferred techniques
 
-- Diagrams
 - Flowcharts
 - Sequence diagrams
+- State diagrams
+- Architecture diagrams
 - System maps
 
 If a concept cannot be visualized, revisit the theory.
 
 ---
 
-# Stage 5 — Hands-on Practice
+# Stage 8 — Internal Working
 
-Practice in isolation before project integration.
+Understand the complete workflow.
 
-Examples:
+Questions
 
-- Small Python scripts
-- Test applications
-- Packet captures
-- Authentication demos
-
-The objective is confidence before production implementation.
-
----
-
-# Stage 6 — Cyber Act Integration
-
-Cyber Act provides structured theoretical depth.
-
-Each learning topic should map to a Cyber Act module.
-
-Cyber Act answers:
-
-- How does it work?
-- Why does it work?
-- How is it attacked?
-- How is it defended?
+- What happens first?
+- Which components participate?
+- What data moves?
+- What state changes?
+- What happens if something fails?
 
 ---
 
-# Stage 7 — HTB / Labs
+# Stage 9 — Security Perspective
 
-HTB exists to reinforce learning.
+Study
 
-Every completed room should strengthen an active skill.
+- Common attacks
+- Misconfigurations
+- Weaknesses
+- Detection opportunities
+- Mitigations
+- Best practices
 
-Do not complete rooms simply to increase numbers.
-
-Each room should answer:
-
-- Which skill did it reinforce?
-- Which ATT&CK techniques appeared?
-- Which flagship project benefits?
+Every technology should be viewed from both attacker and defender perspectives.
 
 ---
 
-# Stage 8 — Project Implementation
+# Stage 10 — Industry Usage
 
-Implementation occurs immediately after understanding.
+Understand where the technology is actually used.
+
+Examples
+
+Products
+
+Frameworks
+
+Cloud Platforms
+
+Enterprise Applications
+
+Also understand when NOT to use it.
+
+---
+
+# Stage 11 — Engineering Alternatives
+
+Study competing approaches.
+
+Examples
+
+Sessions vs JWT
+
+RBAC vs ABAC
+
+REST vs GraphQL
+
+Docker vs Podman
+
+Compare
+
+- Advantages
+- Disadvantages
+- Complexity
+- Performance
+- Security
+- Scalability
+
+The objective is awareness, not mastery.
+
+---
+
+# Stage 12 — Engineering Decision
+
+Choose one implementation.
+
+Document
+
+Problem
+
+↓
+
+Available Solutions
+
+↓
+
+Chosen Solution
+
+↓
+
+Reason
+
+↓
+
+Trade-offs
+
+↓
+
+Future Alternatives
+
+Engineering is choosing the right solution—not knowing every solution.
+
+---
+
+# Stage 13 — Hands-on Practice
+
+Before project integration
+
+Build
+
+Break
+
+Observe
+
+Fix
+
+Experiment
+
+Develop intuition.
+
+---
+
+# Stage 14 — Cyber Act Integration
+
+Complete the module.
+
+Update
+
+- Branch Knowledge
+- Skill Matrix
+- Engineering Notes
+
+---
+
+# Stage 15 — Project Implementation
+
+Immediately apply the knowledge.
 
 Healthcare V2
 
@@ -210,100 +608,112 @@ or
 
 Detection Engineering Platform
 
-should receive the feature while the knowledge is fresh.
-
-Implementation is the primary proof of understanding.
+Implementation is the strongest proof of understanding.
 
 ---
 
-# Stage 9 — Testing
+# Stage 16 — Testing
 
 Every implementation should be verified.
 
-Testing includes:
+Functional Tests
 
-- Functional testing
-- Security testing
-- Edge cases
-- Failure scenarios
+Security Tests
 
-Engineering requires verification.
+Edge Cases
+
+Failure Scenarios
+
+Regression Tests
+
+Performance
+
+Verification is mandatory.
 
 ---
 
-# Stage 10 — Documentation
+# Stage 17 — Documentation
 
-Document:
+Document
 
 - Concept
-- Design decisions
-- Implementation
-- Lessons learned
+- Architecture
+- Decisions
+- Trade-offs
+- Lessons Learned
 - References
 
-Future knowledge depends on documentation quality.
+Documentation preserves engineering knowledge.
 
 ---
 
-# Stage 11 — Interview Preparation
+# Stage 18 — Interview Preparation
 
-Every skill should answer:
+Every module should answer
 
 - What problem does it solve?
-- Why was this design chosen?
-- Alternatives?
+- How does it work?
+- Why this solution?
+- Why not another solution?
 - Security implications?
 - Trade-offs?
-- Common interview questions?
-
-If the skill cannot be explained clearly, it is not yet mastered.
+- Failure cases?
+- Industry usage?
 
 ---
 
-# Stage 12 — Portfolio Evidence
+# Stage 19 — Portfolio Evidence
 
-Every completed skill should produce evidence.
+Every completed module should generate evidence.
 
-Possible evidence includes:
+Examples
 
 - Healthcare feature
 - Detection feature
 - GitHub commit
-- Technical documentation
-- Blog
+- Documentation
 - Detection rule
 - Investigation
 - Resume bullet
 - Interview story
 
-Learning without evidence is incomplete.
+Knowledge without evidence is incomplete.
 
 ---
 
-# Stage 13 — Revision
+# Stage 20 — Revision
 
-Knowledge decays.
+Revisit important topics periodically.
 
-Every important topic should be revisited periodically.
+Prioritize
 
-Revision should prioritize:
-
-- Weak areas
+- Weak concepts
 - Interview topics
 - Frequently used skills
-- Recently forgotten concepts
+- Forgotten material
+- Engineering decisions
+
+Knowledge decays without reinforcement.
 
 ---
 
 # Completion Criteria
 
-A skill is complete when all are true:
+A topic is complete only when all are true.
 
-✓ Understand the concept
+✓ Understand the problem
 
-✓ Explain it clearly
+✓ Understand the ecosystem
 
-✓ Build it
+✓ Explain the concept
+
+✓ Explain the internals
+
+✓ Compare alternatives
+
+✓ Justify the chosen solution
+
+✓ Implement it
 
 ✓ Test it
 
@@ -315,12 +725,11 @@ A skill is complete when all are true:
 
 ✓ Discuss confidently during interviews
 
-Only then is the skill considered part of permanent knowledge.
-
 ---
 
 # Final Principle
 
-The objective is not to know more.
+The objective is not to learn technologies.
 
-The objective is to become capable of solving real engineering problems through disciplined learning and continuous implementation.
+The objective is to become an engineer capable of understanding problems, evaluating solutions, making sound engineering decisions, building secure systems, and continuously improving them through practical experience.
+

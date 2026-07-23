@@ -1,7 +1,7 @@
 # Portfolio System
 
 > Status: Active
-> Version: 1.0
+> Version: 1.1
 > Last Updated:
 
 ---
@@ -65,6 +65,7 @@ Interview Story
 The primary evidence.
 
 - Secure Healthcare Platform V2
+- Threat Investigation Platform
 - Detection Engineering Platform
 
 These receive the highest priority.
@@ -162,14 +163,17 @@ Every completed skill should generate one or more artifacts.
 
 Possible artifacts:
 
-- Project feature
-- GitHub commit
-- Technical documentation
-- Blog
-- Detection rule
-- Investigation
-- Resume bullet
-- Interview story
+- Project Feature
+- HTB / THM Write-up
+- Open Source Contribution
+- Detection Rule
+- Investigation Report
+- GitHub Commit
+- Technical Documentation
+- Technical Blog
+- Architecture Decision Record
+- Resume Bullet
+- Interview Story
 
 Learning without evidence is incomplete.
 

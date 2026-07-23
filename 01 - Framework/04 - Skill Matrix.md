@@ -1,7 +1,7 @@
 # Skill Intelligence Matrix
 
 > Status: Active
-> Version: 1.0
+> Version: 1.1
 > Last Updated:
 
 ---
@@ -12,7 +12,7 @@ The Skill Intelligence Matrix is the master tracking system for every skill requ
 
 Every skill exists only once in this document.
 
-Every learning module, Cyber Act topic, flagship project, HTB room, portfolio artifact, interview topic, and resume bullet should eventually reference one or more skills defined here.
+Every learning module, Cyber Act topic, flagship project, HTB room, portfolio artifact, interview topic, resume bullet, and open source contribution should eventually reference one or more skills defined here.
 
 ---
 
@@ -48,8 +48,8 @@ Placement Ready
 
 # Master Skill Matrix
 
-| Skill | Domain | Priority | Branch Knowledge | Cyber Act | Healthcare V2 | Detection Platform | HTB / THM | Investigation | Portfolio | Interview | Resume | Status |
-|---------|---------|----------|-----------------|-----------|---------------|-------------------|-----------|---------------|-----------|-----------|--------|--------|
+| Skill | Domain | Priority | Branch Knowledge | Cyber Act | Healthcare V2 | Threat Investigation Platform | Detection Engineering Platform | HTB / THM | Open Source | Investigation | Portfolio | Interview | Resume | Status |
+|---------|---------|----------|-----------------|-----------|---------------|-------------------------------|--------------------------------|-----------|-------------|---------------|-----------|-----------|--------|--------|
 
 ---
 
@@ -96,6 +96,8 @@ Every skill should eventually answer:
 • Which flagship project implements it?
 
 • Which HTB room reinforces it?
+
+• Which open source contribution demonstrates it?
 
 • Which investigation uses it?
 

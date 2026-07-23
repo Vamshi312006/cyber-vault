@@ -1,7 +1,7 @@
 # Career Roadmap
 
 > Status: Active
-> Version: 1.0
+> Version: 1.1
 > Last Updated:
 
 ---
@@ -51,23 +51,29 @@ Healthcare V2
 
 Phase 4
 
-Detection Engineering Platform
+Threat Investigation Platform
 
 ↓
 
 Phase 5
 
-Portfolio
+Detection Engineering Platform
 
 ↓
 
 Phase 6
 
-Placement Preparation
+Portfolio
 
 ↓
 
 Phase 7
+
+Placement Preparation
+
+↓
+
+Phase 8
 
 Applications & Interviews
 
@@ -160,7 +166,36 @@ Production-quality implementation with complete documentation.
 
 ---
 
-# Phase 4 — Detection Engineering Platform
+# Phase 4 — Threat Investigation Platform
+
+Objective
+
+Build a reusable investigation platform that automates IOC enrichment, evidence normalization, confidence scoring, and investigation workflows.
+
+Major Goals
+
+- IOC enrichment
+- Multi-provider threat intelligence
+- Evidence normalization
+- Confidence scoring
+- Investigation workflows
+- API orchestration
+- Report generation
+
+Deliverables
+
+- Working platform
+- Investigation workflows
+- Technical documentation
+- Resume evidence
+
+Completion Criteria
+
+Production-quality investigation platform demonstrating practical blue-team investigation capability.
+
+---
+
+# Phase 5 — Detection Engineering Platform
 
 Objective
 
@@ -190,7 +225,7 @@ End-to-end detection engineering workflow.
 
 ---
 
-# Phase 5 — Portfolio
+# Phase 6 — Portfolio
 
 Objective
 
@@ -210,7 +245,7 @@ Every flagship project professionally documented.
 
 ---
 
-# Phase 6 — Placement Preparation
+# Phase 7 — Placement Preparation
 
 Objective
 
@@ -232,7 +267,7 @@ Placement-ready portfolio and interview readiness.
 
 ---
 
-# Phase 7 — Applications & Interviews
+# Phase 8 — Applications & Interviews
 
 Objective
 
@@ -262,7 +297,11 @@ Healthcare V2
 
 ↓
 
-Detection Engineering
+Threat Investigation Platform
+
+↓
+
+Detection Engineering Platform
 
 ↓
 
@@ -329,4 +368,4 @@ The roadmap is complete when:
 
 The destination is not merely employment.
 
-The destination is becoming an engineer capable of designing, building, securing, detecting, and continuously improving real-world systems.
+The destination is becoming an engineer capable of designing, building, securing, investigating, detecting, and continuously improving real-world systems.
